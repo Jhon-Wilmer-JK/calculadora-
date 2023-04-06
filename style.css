@@ -1,0 +1,42 @@
+body{
+    background-color: #141468;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+input[type="text"] {
+    height: 60px;
+    font-size: 36px;
+    text-align: right;
+    padding-right: 10px;
+    border: none;
+    box-shadow: inset 1px 1px 3px #CCCCCC;
+    border-radius: 5px;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #cccccc;
+    background-color: #FFC107;
+}
+
+.equals-button {
+    background-color: #FFC107;
+    border: 1px solid #FF9800;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 1px #FF9800;
+}
+
+.clear-button {
+    background-color: #F44336;
+    border: 1px solid #D32F2F;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 1px #D32F2F;
+}
