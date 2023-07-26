@@ -1,42 +1,84 @@
 body{
-    background-color: #141468;
+    background-color: #ffffff;
 }
-table {
-    border-collapse: collapse;
+
+#igual {
+    background-color: #ff7f07;
+    border: 1px solid #FF9800;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 1px #D32F2F;
+}
+#suma, #resta, #multiplicacion, #division{
+    background-color: #ff7707;
+    box-shadow: 1px 1px 1px #D32F2F;
+}
+
+.calculadora1{
+    display: block;
+    width: 350px;
+    height: 505px;
     margin: auto;
+    padding: 20px;
+    background-color: rgb(31, 224, 250);
+    border: 2px solid rgb(44, 159, 204);
+    border-radius: 50px;
 }
-
-input[type="text"] {
-    height: 60px;
-    font-size: 36px;
-    text-align: right;
-    padding-right: 10px;
-    border: none;
-    box-shadow: inset 1px 1px 3px #CCCCCC;
-    border-radius: 5px;
-}
-
-.button {
+.calculadora1 td button{
     width: 60px;
     height: 60px;
     font-size: 24px;
     margin: 5px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px #cccccc;
+    border-radius: 10px;
     background-color: #FFC107;
+    box-shadow: 1px 1px 1px #D32F2F;
 }
 
-.equals-button {
-    background-color: #FFC107;
-    border: 1px solid #FF9800;
-    color: #FFFFFF;
-    box-shadow: 1px 1px 1px #FF9800;
-}
-
-.clear-button {
+#resetea {
     background-color: #F44336;
     border: 1px solid #D32F2F;
     color: #FFFFFF;
     box-shadow: 1px 1px 1px #D32F2F;
 }
+
+#elimina{
+    width: 60px;
+    height: 30px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #D32F2F;
+    color: #FFFFFF;
+    background-color: #ff4107;
+}
+
+#modoDN{
+    width: 35px;
+    height: 30px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+#resultado{
+    display: block;
+    text-align: center;  
+    font-size: 60px;
+    margin-bottom: 10px;
+    width:300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(227, 235, 231);
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    overflow-x: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border: 2px solid rgb(95, 95, 95);
+}
+
