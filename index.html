@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Calculadora</title>
-</head>
-<body>
-	<table>
-		<tr>
-			<td colspan="4"><input type="text" id="result" readonly></td>
-		</tr>
-		<tr>
-			<td><button class="button clear-button" onclick="clearResult()">C</button></td>
-			<td><button class="button" onclick="addNumber('(')">(</button></td>
-			<td><button class="button" onclick="addNumber(')')">)</button></td>
-			<td><button class="button" onclick="addNumber('/')">÷</button></td>
-		</tr>
-		<tr>
-			<td><button class="button" onclick="addNumber('7')">7</button></td>
-			<td><button class="button" onclick="addNumber('8')">8</button></td>
-			<td><button class="button" onclick="addNumber('9')">9</button></td>
-			<td><button class="button" onclick="addNumber('*')">x</button></td>
-		</tr>
-		<tr>
-			<td><button class="button" onclick="addNumber('4')">4</button></td>
-			<td><button class="button" onclick="addNumber('5')">5</button></td>
-			<td><button class="button" onclick="addNumber('6')">6</button></td>
-			<td><button class="button" onclick="addNumber('-')">-</button></td>
-		</tr>
-		<tr>
-			<td><button class="button" onclick="addNumber('1')">1</button></td>
-			<td><button class="button" onclick="addNumber('2')">2</button></td>
-			<td><button class="button" onclick="addNumber('3')">3</button></td>
-			<td><button class="button" onclick="addNumber('+')">+</button></td>
-		</tr>
-		<tr>
-			<td colspan="2"><button class="button" onclick="addNumber('0')">0</button></td>
-			<td><button class="button" onclick="addDecimal()">.</button></td>
-			<td><button class="button equals-button" onclick="calculate()">=</button></td>
-		</tr>
-	</table>
-</body>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculadora</title>
+	</head>
+
+	<body id="body" onload="init();">
+		<table class="calculadora1">
+			<tr>
+				<td colspan="4"><span id="resultado"></span></td>
+			</tr>
+			<tr>
+				<td><button id="modoDN">☼</button> </td>
+				<td colspan="2"></td>
+				<td><button id="elimina">←</button></td>
+			</tr>
+			<tr>
+				<td><button id="siete">7</button></td>
+				<td><button id="ocho">8</button></td>
+				<td><button id="nueve">9</button></td>
+				<td><button id="division">/</button></td>
+			</tr>
+			<tr>
+				<td><button id="cuatro">4</button></td>
+				<td><button id="cinco">5</button></td>
+				<td><button id="seis">6</button></td>
+				<td><button id="multiplicacion">*</button></td>
+			</tr>
+			<tr>
+				<td><button id="uno">1</button></td>
+				<td><button id="dos">2</button></td>
+				<td><button id="tres">3</button></td>
+				<td><button id="resta">-</button></td>
+			</tr>
+			<tr>
+				<td><button id="igual">=</button></td>
+				<td><button id="resetea">C</button></td>
+				<td><button id="cero">0</button></td>
+				<td><button id="suma">+</button></td>
+			</tr>
+		</table>
+	</body>
 </html>
+<script src="script.js" type="text/javascript"></script>
